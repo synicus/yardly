@@ -14,8 +14,6 @@
     "dev:wds": "webpack-dev-server --progress",
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
     "prod:stop": "pm2 delete server",
-    "prepush": "yarn test && yarn prod:build",
-    "precommit": "yarn test"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
