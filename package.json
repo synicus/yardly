@@ -6,7 +6,7 @@
     "> 1%"
   ],
   "scripts": {
-    "test": "eslint src && jest --coverage",
+    "test": "eslint src && jest",
     "start": "yarn dev:start",
     "prod:build": "rimraf lib && babel src -d lib --ignore .test.js && cross-env NODE_ENV=production webpack -p --progress",
     "prod:start": "cross-env NODE_ENV=production pm2 start lib/server && pm2 logs",
